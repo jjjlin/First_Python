@@ -51,18 +51,20 @@ First_Python
 
 單元25 - Python Django PayPal API 電子商務金流串接（募資金額 400% 解鎖）
 <br/><br/><br/>
-環境建置（Enviroment）
 
-Anaconda
-Jupyter
-Sublime Text
-Ipython
-repl.it
+<font size="20">環境建置（Enviroment）</font>
+
+Anaconda<br/>
+Jupyter<br/>
+Sublime Text<br/>
+Ipython<br/>
+repl.it<br/>
 <br/><br/><br/>
-Sublime 外掛（Sublime）
 
-Emmet
-HTML-CSS-JS Prettify
-Bracket​Highlighter
-Codecs33/ConvertToUTF8
-SublimeCodeIntel
+<font size="20">Sublime 外掛安裝</font>
+
+Emmet<br/>
+HTML-CSS-JS Prettify<br/>
+Bracket​Highlighter<br/>
+Codecs33/ConvertToUTF8<br/>
+SublimeCodeIntel<br/>
