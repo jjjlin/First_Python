@@ -50,18 +50,18 @@ First_Python
 單元24 - Python Django Facebook API 整合入門（募資金額 200% 解鎖）    
 
 單元25 - Python Django PayPal API 電子商務金流串接（募資金額 400% 解鎖）
-<br/><br/><br/>
+<br/><br/>
 
-<font size="20">環境建置（Enviroment）</font>
+#環境建置（Enviroment）
 
 Anaconda<br/>
 Jupyter<br/>
 Sublime Text<br/>
 Ipython<br/>
 repl.it<br/>
-<br/><br/><br/>
+<br/><br/>
 
-<font size="20">Sublime 外掛安裝</font>
+<font size="200">#Sublime 外掛安裝</font>
 
 Emmet<br/>
 HTML-CSS-JS Prettify<br/>
