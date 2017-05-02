@@ -1,5 +1,5 @@
-# First_Python
-First_Python
+# Python 實作案例
+
 <br/><br/><br/>
 單元1 - Python 程式設計初體驗（寶可夢 Pokemon 對戰遊戲範例）
 
