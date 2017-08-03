@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HOW OLD ARE YOU</title>
+	<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container"> 
+		<h1>HOW OLD ARE YOU</h1>
+		<form action="/upload" enctype="multipart/form-data" method="POST">
+				<input type="file" name="img">
+				<hr>
+				<button class="btn btn-primary">上傳圖片</button>
+		</form>
+		<hr>
+		{% if result %}    <!-- 判定是否有結果-->
+		<img src="/static/images/{{ filename }}">
+		{% endif %}
+	</div>
+</body>
+</html>
