@@ -1,0 +1,77 @@
+{% extends 'default/base.html' %}
+<!-- Main jumbotron for a primary marketing message or call to action -->
+{% block content %}
+<div class="jumbotron">
+  {% for message in messages %}
+  <div class="alert alert-success" role="alert">{{ message }}</div>
+  {% endfor %}
+  <div class="container">
+    <h1>分享料理的美好時刻！</h1>
+    <p>在這裡你可以分享你的私房食譜給喜愛料理的朋友們</p>
+    <p><a class="btn btn-primary btn-lg" href="#" role="button">了解更多 &raquo;</a></p>
+  </div>
+</div>
+
+
+<div class="container">
+  <!-- Example row of columns -->
+  <div class="row">
+    <div id="result">
+
+    </div>
+  </div>
+</div> <!-- /container -->
+
+<script type="text/javascript">
+  var xhr = new XMLHttpRequest();
+  var onloadHandle = function() {
+    var data = JSON.parse(JSON.parse(xhr.responseText).data);
+    var result = document.getElementById('result');
+    var strHTML = '';
+    data.forEach(function(value) {
+      strHTML += '<div class="col-md-4"><h4>' + value.fields.title  + '</h4><a href="/recipes/' + value.pk + '" class="thumbnail">' + '<img src="' + value.fields.image_path + '">' + '</a></div>';
+    });
+    result.innerHTML = strHTML;
+  };
+  xhr.open('GET', '/api/recipes', true);
+  xhr.send();
+  xhr.onload = onloadHandle;
+</script>
+{% endblock %}
+<!--
+    });
+
+    
+  };
+  xhr.open('GET','http://localhost:8000/api/recipes', true);
+  xhr.send();
+
+  xhr.onload = onloadHandle;
+
+
+</script>
+
+</div> /container -->
+
+
+
+
+
+<!--    程式邏輯
+    <div class="col-md-4">
+      <h3>{{ recipe.title }}</h3>
+      <a href="#" class="thumbnail">
+        <img src="{{ recipe.image_path }}" alt="">
+      </a>  
+      <p>{{ recipe.created_at | date:"Y / m / d"}}</p>
+
+   {% for recipe in recipes %}    程式邏輯
+    <div class="col-md-4">
+      <h3>{{ recipe.title }}</h3>
+      <a href="#" class="thumbnail">
+        <img src="{{ recipe.image_path }}" alt="">
+      </a>  
+      <p>{{ recipe.created_at | date:"Y / m / d"}}</p>
+    </div>
+    {% endfor %}
+  </div>    -->
